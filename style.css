@@ -1,0 +1,137 @@
+:root{
+  font-size: 62.5%; /* 1rem = 1.0rem */
+  --font-family-default: 'Rubik', sans-serif;
+  --white: #FFFFFF;
+  --purple: #633BBC; 
+  --linear-gradient: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background: var(--linear-gradient);
+  font-size: 1.4rem;
+  color: var(--white);
+  height: 100vh;
+  overflow: hidden;
+}
+
+body *{
+  /* border: .1rem solid red; */
+  font-family: var(--font-family-default);
+}
+
+#app{
+  width: 100vw;
+  min-height: 100vh;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#boarding-pass{
+  width: 32.7rem;
+}
+
+#boarding-pass #boarding-title{
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#boarding-pass #boarding-ticket{
+  margin: 2rem 0;
+  color: black;
+  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.25));
+}
+
+#boarding-pass #boarding-warning{
+  font-weight: 400;
+  opacity: .64;
+  line-height: 2.4rem;
+  letter-spacing: -0.02em
+}
+
+#boarding-title,
+#boarding-warning,
+#boarding-info-footer,
+.qr-code-description{
+  text-align: center;
+}
+
+#flight-info,
+#passanger-info, 
+#boarding-info{
+  background-color: var(--white);
+  border-radius: 2.4rem;
+  padding: 2.4rem 3.2rem;
+  gap: 2.4rem;
+}
+
+#boarding-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.boarding-info{
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.boarding-time-container{
+  background-color: var(--purple);
+  border-radius: .8rem;
+  color: var(--white);
+  text-align: center;
+  padding: .4rem .6rem;
+}
+
+#flight-info{
+  display: flex;
+  flex-direction: column;
+}
+
+#departure .airport,
+#arrival .airport{
+  font-size: 4.0rem;
+  font-weight: 500;
+}
+
+.left-side{
+  text-align: left;
+}
+
+.right-side{
+  text-align: right;
+}
+
+div > strong{
+  font-size: 1.6rem;
+}
+
+.divider{
+  width: 27.9rem;
+  height: 1px;
+  margin: auto;
+  border: 1px dashed rgba(0, 0, 0, 0.32);
+  background-color: var(--white);
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+}
