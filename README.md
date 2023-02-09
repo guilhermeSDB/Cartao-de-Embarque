@@ -7,7 +7,7 @@
 
 > Desafio 06 Rockseat - Cartão de Embarque
 
-### Preview: https://guilhermesdb.github.io/Cartão-de-Embarque/
+### Preview: https://guilhermesdb.github.io/Cartao-de-Embarque/
 
 ## 🤝 Colaboradores
 
